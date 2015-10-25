@@ -18,15 +18,12 @@ public class Hash {
 		}
 		for (int currentKey : myMap.keySet()) {
 			TreeSet<String> currentSet = myMap.get(currentKey);
-			System.out.print(currentKey + ": ");
 			Iterator<String> hashIter = currentSet.iterator();
 			if (currentSet.size() > 1) {
+				System.out.print(currentKey + ": ");
 				while (hashIter.hasNext()) {
-					if (hashIter.hasNext()) {
-						System.out.print(hashIter.next() + ", ");
-					} else {
-						System.out.print(hashIter.next());
-					}
+					String current = hashIter.next();
+					System.out.print(current + ", ");
 				}
 				System.out.println();
 			}

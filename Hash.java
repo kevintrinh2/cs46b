@@ -26,7 +26,7 @@ public class Hash {
 					if(hashIter.hasNext()) {
 						System.out.print(current + ", ");
 					}else{
-						System.out.print(current + "t");
+						System.out.print(current);
 					}
 				}
 				System.out.println();

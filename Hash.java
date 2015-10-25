@@ -16,7 +16,8 @@ public class Hash {
 			}
 			myMap.put(hashKey, currentSet);
 		}
-		for (int currentKey : myMap.keySet()) {
+		TreeSet<Integer> keys = (TreeSet<Integer>) myMap.keySet();
+		for (int currentKey : keys) {
 			TreeSet<String> currentSet = myMap.get(currentKey);
 			Iterator<String> hashIter = currentSet.iterator();
 			if (currentSet.size() > 1) {

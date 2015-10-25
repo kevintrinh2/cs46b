@@ -23,7 +23,11 @@ public class Hash {
 				System.out.print(currentKey + ": ");
 				while (hashIter.hasNext()) {
 					String current = hashIter.next();
-					System.out.print(current + ", ");
+					if(hashIter.hasNext()) {
+						System.out.print(current + ", ");
+					}else{
+						System.out.print(current + "t");
+					}
 				}
 				System.out.println();
 			}
